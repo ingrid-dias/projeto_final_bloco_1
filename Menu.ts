@@ -14,22 +14,23 @@ export function main() {
     const produtoController: ProdutoController = new ProdutoController();
 
     produtoController.cadastrar(new EdicaoEspecial(produtoController.gerarId(),
-        "Joel Miller - The Last Of Us", 1, 120.00, "Edição Especial"));
+        "Joel Miller - The Last Of Us", 1, 120.00, "Edicao Especial"));
 
     produtoController.cadastrar(new EdicaoPadrao(produtoController.gerarId(),
-        "Jack Sparrow - Piratas do Caribe", 2, 80.00, "Edicao Padrão"));
+        "Jack Sparrow - Piratas do Caribe", 2, 80.00, "Edicao Padrao"));
 
     while (true) {
 
         console.log(colors.bg.white, colors.fg.cyanstrong,
-            "*****************************************************");
+                   "******************************************************");
         console.log("                                                     ");
-        console.log("                    Punko Fop                        ");
+        console.log("                Magix - Punko Fop                    ");
+        console.log("           Não é o original, mas parece!             ");
         console.log("                                                     ");
         console.log("*****************************************************");
         console.log("                                                     ");
         console.log("            1 - Criar Produto                        ");
-        console.log("            2 - Listar todas as Produtos             ");
+        console.log("            2 - Listar todos os Produtos             ");
         console.log("            3 - Buscar Produto por Id                ");
         console.log("            4 - Atualizar Dados da Produto           ");
         console.log("            5 - Apagar Produto                       ");
@@ -44,7 +45,7 @@ export function main() {
 
         if (opcao == 0) {
             console.log(colors.fg.magentastrong,
-                "\nNão é o original, mas parece!");
+                "\nNÃO É O ORIGINAL, MAS PARECE!");
             sobre();
             console.log(colors.reset, "");
             process.exit(0);
